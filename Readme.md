@@ -1,7 +1,7 @@
-# Личный проект «Нёрдс»
+﻿# Личный проект «Нёрдс»
 
 * Студент: [Ирина Самосадная](https://up.htmlacademy.ru/htmlcss/18/user/373565).
-* Наставник: [Полина Катышева] (https://htmlacademy.ru/profile/id504601).
+* Наставник: [Полина Катышева](https://htmlacademy.ru/profile/id504601).
 
 ---
 
