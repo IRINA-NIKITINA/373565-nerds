@@ -17,9 +17,7 @@
 				<li class="main-navigator-item current"><a>Магазин</a></li>
 				<li class="main-navigator-item"><a href="contacts.html">Контакты</a></li>
 			</ul>
-			<ul class="user-goods">
-				<li class="goods-link"><a>Корзина</a></li>
-			</ul>
+			<a class="goods-link" href="#">Корзина</a>
 		</nav>
 	</header>
 
@@ -28,8 +26,9 @@
 			<h2 class="visually-hidden">Фильтр товаров</h2>
 			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
 				<div class="filter-price">
-					<label>Стоимость:<input type="range" name="price" min="0" max="15000" value="10000"></label>
-					<p>От <span>0</span> до <span>15000</span></p>
+					<label>Стоимость:<input type="range" name="price" min="0" max="25000" value="15000"></label>
+					<label>От <input type="number" name="min-price" min="0" max="25000" value="0"></label> 
+					<label> до <input type="number" name="max-price" min="0" max="25000" value="15000"></label>
 				</div>
 				<fieldset>
 					<legend>Сетка:</legend>
@@ -70,12 +69,23 @@
 		</section>
 		
 		<section class="sort">
-			<h3>Сортировать:</h3>
-			<ul class="sort-list">
-				<li class="sort-item current">По цене</li>
-				<li class="sort-item">По типу</li>
-				<li class="sort-item">По названию</li>
-			</ul>
+			<h2 class="visually-hidden">Сортировка товаров</h2>
+			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+				<fieldset>
+					<legend>Сортировать:</legend>
+						<ul class="sort-list">
+							<li class="sort-option">
+								<label>По цене<input type="radio" name="sort-item" class="visually-hidden sort-input sort-input-radio current"></label>
+							</li>
+							<li class="sort-option">
+								<label>По типу<input type="radio" name="sort-item" class="visually-hidden sort-input sort-input-radio"></label>
+							</li>
+							<li class="sort-option">
+								<label>По названию<input type="radio" name="sort-item" class="visually-hidden sort-input sort-input-radio"></label>
+							</li>
+						</ul>
+				</fieldset>
+			</form>
 		</section>
 
 		<section class="catalog">
