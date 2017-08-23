@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
   </head>
   <body>
 	<header class="main-header">
@@ -17,7 +19,7 @@
 				<li class="main-navigator-item"><a href="catalog.html">Магазин</a></li>
 				<li class="main-navigator-item"><a href="contacts.html">Контакты</a></li>
 			</ul>
-			<a class="goods-link" href="#">Корзина</a>
+			<a class="goods-link" href="#"><img src="img/cart-icon.svg" width="16" height="16" alt="Корзина">Корзина</a>
 		</nav>
     </header>
 
@@ -28,44 +30,55 @@
 					<li class="slider-item current">
 						<h2 class="slider-title">Долго, дорого, скрупулезно.</h2>
 						<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-						<a class="slider-button" href="#">Узнать больше</a>
+						<a class="button slider-button" href="#">Узнать больше</a>
 						<img src="img/slide1.jpg" width="698" height="413" alt="Слайд-1">
 					</li>
 					<li class="slider-item">
 						<h2 class="slider-title">Любим математику как никто другой</h2>
 						<p>Никакого креатива, только математические формулы для расчёта идеальных пропорций.</p>
-						<a class="slider-button" href="#">Узнать больше</a>
+						<a class="button slider-button" href="#">Узнать больше</a>
 						<img src="img/slide2.jpg" width="663" height="430" alt="Слайд-2">
 					</li>
 					<li class="slider-item">
 						<h2 class="slider-title">Только ночь, только хардкор</h2>
 						<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-						<a class="slider-button" href="#">Узнать больше</a>
+						<a class="button slider-button" href="#">Узнать больше</a>
 						<img src="img/slide3.jpg" width="759" height="411" alt="Слайд-3">
+					</li>
+				</ul>
+				<ul class="slider-indicator">
+					<li>
+						<button type="button" class="indicator">Первый слайд</button>
+					</li>
+					<li>
+						<button type="button" class="indicator">Второй слайд</button>
+					</li>
+					<li>
+						<button type="button" class="indicator">Третий слайд</button>
 					</li>
 				</ul>
 			</section>
 
-			<section class="catalog">
+			<section class="amenities">
 				<h2 class="visually-hidden">Услуги</h2>
-				<ul class="catalog-list">
-					<li class="catalog-item">
-						<h3 class="catalog-item-title">Веб-сайты</h3>
+				<ul class="amenities-list">
+					<li class="amenities-item">
+						<h3 class="amenities-item-title">Веб-сайты</h3>
 						<img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
 						<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-						<button class="catalog-button">Заказать</button>
+						<button class="button amenities-button">Заказать</button>
 					</li>
-					<li class="catalog-item">
-						<h3 class="catalog-item-title">Приложения</h3>
+					<li class="amenities-item">
+						<h3 class="amenities-item-title">Приложения</h3>
 						<img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
 						<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-						<button class="catalog-button">Заказать</button>
+						<button class="button amenities-button">Заказать</button>
 					</li>
-					<li class="catalog-item">
-						<h3 class="catalog-item-title">Презентации</h3>
+					<li class="amenities-item">
+						<h3 class="amenities-item-title">Презентации</h3>
 						<img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
 						<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-						<button class="catalog-button">Заказать</button>
+						<button class="button amenities-button">Заказать</button>
 					</li>
 				</ul>
 			</section>
@@ -119,7 +132,7 @@
 				<p ><b>Nёrds design studio</b></p>
 				<p>191186, Санкт-Петербург,ул. Б. Конюшенная, д. 19/8</p>
 				<p>Телефон: +7 (812) 275-75-75</p>
-				<button class="footer-button">Напишите нам</button>
+				<button class="button footer-button">Напишите нам</button>
 			</div>
 			<div class="footer-map">
 				<img src="img/map-marker.png" width="231" height="190" alt="Маркер">
@@ -129,9 +142,9 @@
 				<p><b>Давайте дружить, это выгодно!</b></p>
 				<p>Скидка 10% для друзей из социальных сетей.</p>
 				<ul class="footer-social-list">
-					<li class="footer-social-item"><a class="social-button" href="#">Вконтакте</a></li>
-					<li class="footer-social-item"><a class="social-button" href="#">Фейсбук</a></li>
-					<li class="footer-social-item"><a class="social-button" href="#">Инстаграм</a></li>
+					<li class="footer-social-item"><a class="social-button" href="#"><img src="img/vk-icon.svg" alt="Вконтакте" width="25" height="20">Вконтакте</a></li>
+					<li class="footer-social-item"><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Фейсбук" width="15" height="26">Фейсбук</a></li>
+					<li class="footer-social-item"><a class="social-button" href="#"><img src="img/insta-icon.svg" alt="Инстаграм" width="23" height="22">Инстаграм</a></li>
 				</ul>
 			</div>
 		</footer>
@@ -151,9 +164,9 @@
 					Текст письма:
 					<textarea name="mail" placeholder="В свободной форме"></textarea>
 				</label>
-				<button class="button">Отправить</button>
+				<button class="button modal-button">Отправить</button>
 			</form>
-			<button type="button" class="button-modal-close">Закрыть</button>
+			<button type="button" class="button-modal-close"><img src="img/close-cross.svg" alt="Закрыть" width="32" height="21">Закрыть</button>
 		</section>
   </body>
 </html>
