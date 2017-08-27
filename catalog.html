@@ -10,7 +10,7 @@
 		<h1 class="main-header-title">Магазин готовых шаблонов</h1>
 		<nav class="main-navigator">
 			<a class="main-header-logo" href="index.html">
-				<img src="img/nerds-logo.svg" width="200" height="100" alt="Логотип Nёrd&#39;s">
+				<img src="img/nerds-logo.svg" width="200" height="70" alt="Логотип Nёrd&#39;s">
 			</a>
 			<ul class="main-navigator-list">
 				<li class="main-navigator-item"><a href="studio.html">Студия</a></li>
@@ -22,10 +22,10 @@
 		</nav>
 	</header>
 
-	<main>
+	<main class="catalog-container">
 		<section class="filter">
 			<h2 class="visually-hidden">Фильтр товаров</h2>
-			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+			<form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
 				<div class="filter-price">
 					<label for="price">Стоимость:</label>
 					<div class="price">
@@ -80,9 +80,10 @@
 			</form>
 		</section>
 		
+		<div class="catalog-column">
 		<section class="sort">
 			<h2 class="visually-hidden">Сортировка товаров</h2>
-			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+			<form class="sort-form" method="get" action="https://echo.htmlacademy.ru">
 				<fieldset>
 					<legend>Сортировать:</legend>
 						<ul class="sort-list">
@@ -154,13 +155,14 @@
 					</div>
 				</li>
 			</ul>
+			</section>
 			<ul class="pagination-list">
 					<li class="pagination-item current"><a title="Первая страница">1</a></li>
 					<li class="pagination-item"><a href="#" title="Вторая страница">2</a></li>
 					<li class="pagination-item"><a href="#" title="Третья страница">3</a></li>
 					<li class="pagination-item"><a href="#" title="Следующая страница">Следующая</a></li>
-				</ul>
-		</section>
+			</ul>
+		</div>
 	</main>
 
 	<footer class="main-footer">
@@ -175,16 +177,16 @@
 		</div>
 		<div class="footer-map">
 				<img src="img/map-marker.png" width="231" height="190" alt="Маркер">
-				<img src="img/map.jpg" width="1725" height="808" alt="Наш адрес: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+				<img src="img/map.jpg" width="1440" height="808" alt="Наш адрес: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
 			</div>
 		<div class="footer-social">
-			<p><b>Давайте дружить, это выгодно!</b></p>
-			<p>Скидка 10% для друзей из социальных сетей.</p>
-			<ul class="footer-social-list">
+				<ul class="footer-social-list">
 					<li class="footer-social-item"><a class="social-button" href="#"><img src="img/vk-icon.svg" alt="Вконтакте" width="25" height="20">Вконтакте</a></li>
 					<li class="footer-social-item"><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Фейсбук" width="15" height="26">Фейсбук</a></li>
 					<li class="footer-social-item"><a class="social-button" href="#"><img src="img/insta-icon.svg" alt="Инстаграм" width="23" height="22">Инстаграм</a></li>
 				</ul>
+				<p><b>Давайте дружить, это выгодно!</b>
+				Скидка 10% для друзей из социальных сетей.</p>
 		</div>
 	</footer>
 
