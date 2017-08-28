@@ -74,10 +74,6 @@ a {
 }
 
 .main-header {
-	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
-
 	background-color: #eeeeee;
 }
 
@@ -88,8 +84,9 @@ a {
 	width: 1160px;
 	padding-right: 20px;
 	padding-left: 20px;
-	margin-top: 40px;
-	margin-left: 120px;
+	padding-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .goods-link {
@@ -116,10 +113,10 @@ a {
 }
 
 .main-header-title {
-	margin-left: 120px;
-	margin-right: 120px;
-	margin-top: 75px;
-	margin-bottom: 103px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 75px;
+	padding-bottom: 103px;
 	padding-left: 20px;
 	padding-right: 20px;
 	width: 1160px;
@@ -160,12 +157,11 @@ a {
 }
 
 .slider-list {
-	display: flex;
-	flex-direction: column;
 	width: 1160px;
 	margin: 0;
 	padding: 0;
-	margin-left: 120px;
+	margin-left: auto;
+	margin-right: auto;
 	padding-left: 20px;
 	padding-right: 20px;
 	
@@ -192,12 +188,11 @@ a {
 }
 
 .container {
-	display: flex;
-	flex-direction: column;
 	width: 1160px;
 	padding-left: 20px;
 	padding-right: 20px;
-	margin-left: 120px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 80px;
 }
 
@@ -207,7 +202,9 @@ a {
 	display: flex;
 	margin: 0;
 	padding: 0;
-	margin-top: 80px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 80px;
 }
 
 .amenities-item {
@@ -237,7 +234,6 @@ a {
 	background-color: #00aa62;
 }
 
-
 .amenities-item .button-yellow {
 	background-color: #efc84a;
 }
@@ -261,6 +257,8 @@ a {
 	margin: 0;
 	padding: 0;
 	margin-top: 160px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .orders-info {
@@ -308,6 +306,8 @@ a {
 	justify-content: space-around;
 	margin: 0;
 	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 60px;
 }
 
@@ -332,22 +332,18 @@ a {
 	display: flex;
 	justify-content: space-between;
 	width: 1160px;
-	margin-right: 120px;
-	margin-left: 120px;
+	margin-right: auto;
+	margin-left: auto;
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-top: 55px;
 }
 
 .filter {
-	display: flex;
-	flex-direction: column;
 	width: 260px;
 }
 
 .catalog-column {
-	display: flex;
-	flex-direction: column;
 	width: 760px;
 }
 
@@ -409,6 +405,8 @@ a {
 }
 
 .filter-button {
+	width: 260px;
+
 	color: #000000;
 
 	background-color: #eeeeee;
@@ -428,7 +426,7 @@ a {
 
 .sort {
 	width: 760px;
-	margin-bottom: 55px;
+	padding-bottom: 55px;
 }
 
 .sort fieldset {
@@ -508,7 +506,7 @@ a {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	margin-bottom: 60px;
+	padding-bottom: 60px;
 }
 
 .pagination-item a {
@@ -537,11 +535,6 @@ a {
 	background-color: white;
 }
 
-.main-footer {
-	display: flex;
-	flex-direction: column;
-}
-
 .footer-contacts {
 	width: 320px;
 }
@@ -563,10 +556,10 @@ a {
 .footer-social {
 	display: flex;
 	width: 1160px;
-	margin-top: 70px;
-	margin-right: 120px;
-	margin-left: 120px;
-	margin-bottom: 65px;
+	padding-top: 70px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 65px;
 	padding-left: 20px;
 	padding-right: 20px;
 }
