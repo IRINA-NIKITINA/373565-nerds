@@ -23,41 +23,32 @@
 		</nav>
 		<section class="slider">
 				<h2 class="visually-hidden">Слайдер</h2>
+				<input type="radio" name="indicator" id="btn-1" class="btn-1 current" checked>
+				<input type="radio" name="indicator" id="btn-2" class="btn-2">
+				<input type="radio" name="indicator" id="btn-3" class="btn-3">
+				<div class="slider-indicator">
+					<label for="btn-1"><span class="visually-hidden">Первый слайд</span></label>
+					<label for="btn-2"><span class="visually-hidden">Второй слайд</span></label>
+					<label for="btn-3"><span class="visually-hidden">Третий слайд</span></label>
+				</div>
 				<ul class="slider-list">
-					<li class="slider-item current">
-							<div class="slider-column slide-1">
-								<h2 class="slider-title">Долго, дорого, скрупулезно.</h2>
-								<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-								<a class="button slider-button" href="#">Узнать больше</a>
-							</div>
-						<img src="img/slide1.png" width="698" height="413" alt="Слайд-1">
+					<li class="slider-item slide-1 current">
+						<h2 class="slider-title">Долго, дорого, скрупулезно.</h2>
+						<p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+						<a class="button slider-button" href="#">Узнать больше</a>
+						<img src="img/slide1.png" width="760" height="431" alt="Слайд-1">
 					</li>
-					<li class="slider-item">
-						<div class="slider-column slide-2">
-							<h2 class="slider-title">Любим математику как никто другой</h2>
-							<p>Никакого креатива, только математические формулы для расчёта идеальных пропорций.</p>
-							<a class="button slider-button" href="#">Узнать больше</a>
-						</div>
-						<img src="img/slide2.png" width="663" height="430" alt="Слайд-2">
+					<li class="slider-item slide-2">
+						<h2 class="slider-title">Любим математику как никто другой</h2>
+						<p>Никакого креатива, только математические формулы для расчёта идеальных пропорций.</p>
+						<a class="button slider-button" href="#">Узнать больше</a>
+						<img src="img/slide2.png" width="760" height="431" alt="Слайд-2">
 					</li>
-					<li class="slider-item">
-						<div class="slider-column slide-3">
-							<h2 class="slider-title">Только ночь, только хардкор</h2>
-							<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-							<a class="button slider-button" href="#">Узнать больше</a>
-						</div>
-						<img src="img/slide3.png" width="759" height="411" alt="Слайд-3">
-					</li>
-				</ul>
-				<ul class="slider-indicator">
-					<li>
-						<button type="button" class="indicator">Первый слайд</button>
-					</li>
-					<li>
-						<button type="button" class="indicator">Второй слайд</button>
-					</li>
-					<li>
-						<button type="button" class="indicator">Третий слайд</button>
+					<li class="slider-item slide-3">
+						<h2 class="slider-title">Только ночь, только хардкор</h2>
+						<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+						<a class="button slider-button" href="#">Узнать больше</a>
+						<img src="img/slide3.png" width="760" height="431" alt="Слайд-3">
 					</li>
 				</ul>
 			</section>
@@ -68,20 +59,20 @@
 				<h2 class="visually-hidden">Услуги</h2>
 				<ul class="amenities-list">
 					<li class="amenities-item">
-						<h3 class="amenities-item-title">Веб-сайты</h3>
 						<img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
+						<h3 class="amenities-item-title">Веб-сайты</h3>
 						<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
 						<button class="button amenities-button button-red">Заказать</button>
 					</li>
 					<li class="amenities-item">
-						<h3 class="amenities-item-title">Приложения</h3>
 						<img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
+						<h3 class="amenities-item-title">Приложения</h3>
 						<p>Покорите топ-10 приложений в AppStore и Google Play</p>
 						<button class="button amenities-button button-green">Заказать</button>
 					</li>
 					<li class="amenities-item">
-						<h3 class="amenities-item-title">Презентации</h3>
 						<img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
+						<h3 class="amenities-item-title">Презентации</h3>
 						<p>Вы даже не подозреваете, насколько вы изумительны!</p>
 						<button class="button amenities-button button-yellow">Заказать</button>
 					</li>
@@ -141,18 +132,18 @@
 			<div class="footer-map">
 				<div class="footer-contacts">
 					<p ><b>Nёrds design studio</b></p>
-					<p>191186, Санкт-Петербург,ул. Б. Конюшенная, д. 19/8</p>
-					<p>Телефон: +7 (812) 275-75-75</p>
+					<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+					<p>тел. +7 (812) 275-75-75</p>
 					<button class="button footer-button">Напишите нам</button>
 				</div>
-				<img src="img/map-marker.png" width="231" height="190" alt="Маркер">
-				<img src="img/map.jpg" width="1440" height="808" alt="Наш адрес: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+				<img class="marker" src="img/map-marker.png" width="231" height="190" alt="Маркер">
+				<img src="img/map.jpg" width="1440" height="415" alt="Наш адрес: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
 			</div>
 			<div class="footer-social">
 				<ul class="footer-social-list">
-					<li class="footer-social-item"><a class="social-button" href="#"><img src="img/vk-icon.svg" alt="Вконтакте" width="25" height="20">Вконтакте</a></li>
-					<li class="footer-social-item"><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Фейсбук" width="15" height="26">Фейсбук</a></li>
-					<li class="footer-social-item"><a class="social-button" href="#"><img src="img/insta-icon.svg" alt="Инстаграм" width="23" height="22">Инстаграм</a></li>
+					<li class="footer-social-item"><a class="social-button" href="#"><img src="img/vk-icon.svg" alt="Вконтакте" width="25" height="20"><span class="visually-hidden">Вконтакте</span></a></li>
+					<li class="footer-social-item"><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Фейсбук" width="15" height="26"><span class="visually-hidden">Фейсбук</span></a></li>
+					<li class="footer-social-item"><a class="social-button" href="#"><img src="img/insta-icon.svg" alt="Инстаграм" width="23" height="22"><span class="visually-hidden">Инстаграм</span></a></li>
 				</ul>
 				<p><b>Давайте дружить, это выгодно!</b>
 				Скидка 10% для друзей из социальных сетей.</p>

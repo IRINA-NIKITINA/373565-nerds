@@ -26,13 +26,18 @@
 		<section class="filter">
 			<h2 class="visually-hidden">Фильтр товаров</h2>
 			<form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
-				<div class="filter-price">
-					<label for="price">Стоимость:</label>
-					<div class="price">
-						<input type="range" name="price" min="0" max="25000" value="15000" id="price">
+				<div class="range-filter">
+					<div class="range-controls">
+						<div class="scale">
+							<div class="bar"></div>
+						</div>
+						<div class="toggle toggle-min"></div>
+						<div class="toggle toggle-max"></div>
 					</div>
-					<label>От <input type="number" name="min-price" min="0" max="25000" value="0"></label> 
-					<label> до <input type="number" name="max-price" min="0" max="25000" value="15000"></label>
+					<div class="price-controls">
+						<label class="min-price">от<input type="text" name="min-price" value="0"></label>
+						<label class="max-price">от<input type="text" name="max-price" value="15000"></label>
+					</div>
 				</div>
 				<fieldset>
 					<legend>Сетка:</legend>
@@ -97,8 +102,10 @@
 								<label>По названию<input type="radio" name="sort-item" class="visually-hidden sort-input sort-input-radio"></label>
 							</li>
 						</ul>
-						<img class="current" src="img/icon-down-dir.svg" alt="По убыванию" width="11" height="11">
-						<img src="img/icon-up-dir.svg" alt="По возрастанию" width="11" height="11">
+						<div class="sort-indicator">
+							<img class="current" src="img/icon-down-dir.svg" alt="По убыванию" width="11" height="11">
+							<img src="img/icon-up-dir.svg" alt="По возрастанию" width="11" height="11">
+						</div>
 				</fieldset>
 			</form>
 		</section>
@@ -166,29 +173,26 @@
 	</main>
 
 	<footer class="main-footer">
-		<div class="footer-contacts">
-			<p ><b>Nёrds design studio</b></p>
-			<p>
-				191186, Санкт-Петербург,
-				ул. Б. Конюшенная, д. 19/8
-			</p>
-			<p>Телефон: +7 (812) 275-75-75</p>
-			<button class="button footer-button">Напишите нам</button>
-		</div>
-		<div class="footer-map">
-				<img src="img/map-marker.png" width="231" height="190" alt="Маркер">
-				<img src="img/map.jpg" width="1440" height="808" alt="Наш адрес: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+			<div class="footer-map">
+				<div class="footer-contacts">
+					<p ><b>Nёrds design studio</b></p>
+					<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+					<p>тел. +7 (812) 275-75-75</p>
+					<button class="button footer-button">Напишите нам</button>
+				</div>
+				<img class="marker" src="img/map-marker.png" width="231" height="190" alt="Маркер">
+				<img src="img/map.jpg" width="1440" height="415" alt="Наш адрес: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
 			</div>
-		<div class="footer-social">
+			<div class="footer-social">
 				<ul class="footer-social-list">
-					<li class="footer-social-item"><a class="social-button" href="#"><img src="img/vk-icon.svg" alt="Вконтакте" width="25" height="20">Вконтакте</a></li>
-					<li class="footer-social-item"><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Фейсбук" width="15" height="26">Фейсбук</a></li>
-					<li class="footer-social-item"><a class="social-button" href="#"><img src="img/insta-icon.svg" alt="Инстаграм" width="23" height="22">Инстаграм</a></li>
+					<li class="footer-social-item"><a class="social-button" href="#"><img src="img/vk-icon.svg" alt="Вконтакте" width="25" height="20"><span class="visually-hidden">Вконтакте</span></a></li>
+					<li class="footer-social-item"><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Фейсбук" width="15" height="26"><span class="visually-hidden">Фейсбук</span></a></li>
+					<li class="footer-social-item"><a class="social-button" href="#"><img src="img/insta-icon.svg" alt="Инстаграм" width="23" height="22"><span class="visually-hidden">Инстаграм</span></a></li>
 				</ul>
 				<p><b>Давайте дружить, это выгодно!</b>
 				Скидка 10% для друзей из социальных сетей.</p>
-		</div>
-	</footer>
+			</div>
+		</footer>
 
 		<section class="modal">
 			<h2 class="modal-title">Напишите нам</h2>
