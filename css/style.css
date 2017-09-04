@@ -712,10 +712,6 @@ input[type="radio"].visually-hidden {
 	background-position: 0 0;
 }
 
-.filter-input-radio[value="rubber"] ~ label::before {
-	display: none;
-}
-
 
 .filter-input-checkbox ~ label::before {
 	background-image: url("../img/checkbox-off.svg");
