@@ -527,6 +527,7 @@ input[type="radio"].visually-hidden {
 	width: 1160px;
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
 	margin-left: auto;
@@ -632,8 +633,10 @@ input[type="radio"].visually-hidden {
 
 .price-controls label {
 	font-size: 16px;
+	line-height: 22px;
 	display: inline-block;
 	width: 50%;
+	text-transform: uppercase;
 }
 
 .max-price {
@@ -843,6 +846,7 @@ input[type="radio"].visually-hidden {
 	margin-top: 40px;
 	margin-bottom: 35px;
 	height: 576px;
+	border: 1px solid rgba(0, 0, 0, 0);
 }
 
 
@@ -927,8 +931,8 @@ input[type="radio"].visually-hidden {
 
 .pagination-list {
 	display: flex;
-	justify-content: space-between;
-	width: 445px;
+	justify-content: flex-start;
+	min-width: 445px;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -936,9 +940,13 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 30px;
 }
 
+.pagination-item {
+	margin-right: 12px;
+}
+
 .pagination-item a {
 	display: inline-block;
-	width: 20px;
+	min-width: 20px;
 	height: 20px;
 	border-radius: 5%;
 	padding: 15px;
@@ -955,7 +963,7 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-item:last-child a {
-	width: 100px;
+	min-width: 100px;
 	padding-left: 80px;
 	padding-right: 80px;
 }
@@ -972,7 +980,7 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-list .current a {
-	width: 15px;
+	min-width: 15px;
 	height: 15px;
 	border: 3px solid #dbdbdb;
 	background-color: white;
