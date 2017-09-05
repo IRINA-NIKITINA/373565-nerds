@@ -93,13 +93,16 @@
 					<legend>Сортировать:</legend>
 						<ul class="sort-list">
 							<li class="sort-option">
-								<label class="current">По цене<input type="radio" name="sort-item" class="visually-hidden sort-input sort-input-radio"></label>
+								<input type="radio" name="sort-item" class="visually-hidden sort-input sort-input-radio" id="sort-price" checked>
+								<label for="sort-price">По цене</label>
 							</li>
 							<li class="sort-option">
-								<label>По типу<input type="radio" name="sort-item" class="visually-hidden sort-input sort-input-radio"></label>
+								<input type="radio" name="sort-item" class="visually-hidden sort-input sort-input-radio" id="sort-type">
+								<label for="sort-type">По типу</label>
 							</li>
 							<li class="sort-option">
-								<label>По названию<input type="radio" name="sort-item" class="visually-hidden sort-input sort-input-radio"></label>
+								<input type="radio" name="sort-item" class="visually-hidden sort-input sort-input-radio" id="sort-name">
+								<label for="sort-name">По названию</label>
 							</li>
 						</ul>
 						<div class="sort-indicator">
@@ -114,49 +117,49 @@
 			<h2 class="visually-hidden">Шаблоны сайтов</h2>
 			<ul class="catalog-list">
 				<li class="catalog-item current">
-					<a href="#"><img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona - информационный сайт для туристов"></a>
+					<img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona - информационный сайт для туристов">
 					<div class="catalog-item-info">
-						<h3 class="catalog-item-info-title">Sedona</h3>
+						<h3 class="catalog-item-info-title"><a href="#">Sedona</a></h3>
 						<p>Информационный сайт для туристов</p>
 						<button class="button catalog-button">9 900 руб.</button>
 					</div>
 				</li>
 				<li class="catalog-item">
-					<a href="#"><img src="img/img-pink.jpg" width="360" height="576" alt="Pink App - продуктовый лендинг приложения для IOS и Android"></a>
+					<img src="img/img-pink.jpg" width="360" height="576" alt="Pink App - продуктовый лендинг приложения для IOS и Android">
 					<div class="catalog-item-info">
-						<h3 class="catalog-item-info-title">Pink App</h3>
+						<h3 class="catalog-item-info-title"><a href="#">Pink App</a></h3>
 						<p>Продуктовый лендинг приложения для IOS и Android</p>
 						<button class="button catalog-button">9 900 руб.</button>
 					</div>
 				</li>
 				<li class="catalog-item">
-					<a href="#"><img src="img/img-barbershop.jpg" width="360" height="576" alt="Барбершоп &#171;Бородинский&#187; - сайт салона красоты для мужчин"></a>
+					<img src="img/img-barbershop.jpg" width="360" height="576" alt="Барбершоп &#171;Бородинский&#187; - сайт салона красоты для мужчин">
 					<div class="catalog-item-info">
-						<h3 class="catalog-item-info-title">Barbershop</h3>
+						<h3 class="catalog-item-info-title"><a href="#">Barbershop</a></h3>
 						<p>Сайт салона красоты. Для мужчин, да.</p>
 						<button class="button catalog-button">9 900 руб.</button>
 					</div>
 				</li>
 				<li class="catalog-item">
-					<a href="#"><img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka - интернет-магазин вязаных игрушек"></a>
+					<img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka - интернет-магазин вязаных игрушек">
 					<div class="catalog-item-info">
-						<h3 class="catalog-item-info-title">Mishka</h3>
+						<h3 class="catalog-item-info-title"><a href="#">Mishka</a></h3>
 						<p>Интернет-магазин вязаных игрушек</p>
 						<button class="button catalog-button">9 900 руб.</button>
 					</div>
 				</li>
 				<li class="catalog-item">
-					<a href="#"><img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus - лендинг курсов повышения квалификации"></a>
+					<img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus - лендинг курсов повышения квалификации">
 					<div class="catalog-item-info">
-						<h3 class="catalog-item-info-title">A Plus</h3>
+						<h3 class="catalog-item-info-title"><a href="#">A Plus</a></h3>
 						<p>Лендинг курсов повышения квалификации</p>
 						<button class="button catalog-button">9 900 руб.</button>
 					</div>
 				</li>
 				<li class="catalog-item">
-					<a href="#"><img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст - промо-сайт производителя крафтового кваса"></a>
+					<img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст - промо-сайт производителя крафтового кваса">
 					<div class="catalog-item-info">
-						<h3 class="catalog-item-info-title">Кваст</h3>
+						<h3 class="catalog-item-info-title"><a href="#">Кваст</a></h3>
 						<p>Промо-сайт производителя крафтового кваса</p>
 						<button class="button catalog-button">9 900 руб.</button>
 					</div>
@@ -198,20 +201,20 @@
 			<h2 class="modal-title">Напишите нам</h2>
 			<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
 				<label>
-					Ваше имя:
+					Ваше имя:<br>
 					<input class="login-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
 				</label>
 				<label>
-					Ваш e-mail:
+					Ваш e-mail:<br>
 					<input class="login-email" type="email" name="email" placeholder="Для отправки ответа">
 				</label>
 				<label>
-					Текст письма:
+					Текст письма:<br>
 					<textarea name="mail" placeholder="В свободной форме"></textarea>
 				</label>
-				<button class="button">Отправить</button>
+				<button class="button modal-button">Отправить</button>
 			</form>
-			<button type="button" class="button-modal-close"><img src="img/close-cross.svg" alt="Закрыть" width="32" height="21">Закрыть</button>
+			<button type="button" class="modal-button-close">Закрыть</button>
 		</section>
 	</body>
 </html>
