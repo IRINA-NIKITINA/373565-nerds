@@ -3,9 +3,9 @@ var link = document.querySelector(".footer-button");
 var popup = document.querySelector(".modal");
 var close = popup.querySelector(".modal-button-close");
 var form = popup.querySelector("form");
-var login = popup.querySelector("[name=name");
-var email = popup.querySelector("[name=email]");
-var mail = popup.querySelector("[name=mail]");
+var login = form.querySelector("[name=name");
+var email = form.querySelector("[name=email]");
+var mail = form.querySelector("[name=mail]");
 var storageLogin = localStorage.getItem("login");
 var storageEmail = localStorage.getItem("email");
 
@@ -37,7 +37,7 @@ close.addEventListener("click", function(evt) {
 });
 
 form.addEventListener("submit", function (evt) {
-	if (!login.value || !email.value) {
+	if (!login.value || !email.value || !mail.value) {
 		evt.preventDefault();
 		popup.classList.remove("modal-error");
 		popup.offsetWidth = popup.offsetWidth;
